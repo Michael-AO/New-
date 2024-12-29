@@ -1,0 +1,215 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #d9e2e4;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header .logo {
+  width: 150px;
+}
+
+.header-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.header-navigation-a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.header-navigation-a nav {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px dashed #000;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Container for the available speakers */
+.available-speaker, selected-speaker {
+  flex: 1;
+  max-width: 300px;
+  margin: 0px 0;
+  padding: 20px;
+  background-color: #d9e1e1; /* Similar light grey background */
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  justify-content: left;
+}
+
+.available-speakers-h2, selected-speaker-h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+/* Individual speaker container */
+.speaker-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  gap: 25px;
+  text-align: left;
+}
+
+/* Speaker name and role */
+.speaker-item-speaker-info {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  align-items: left;
+}
+
+.speaker-info-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 0px;
+  white-space: nowrap;
+}
+
+.speaker-info-role {
+  font-size: 16px;
+  color: #777;
+  margin-left: 0px;
+  white-space: nowrap
+}
+
+/* Select button styling */
+.speaker-item-select-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.speaker-item-select-btn:hover {
+  background-color: #ddd;
+}
+
+/* Add speaker button */
+.add-speaker-btn {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 12px 25px;
+  font-size: 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content; left;
+}
+
+.add-speaker-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.add-speaker-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  max-width: 400px; /* Set a max width for the form */
+  margin: 10px; /* Add margin around the form */
+  padding: 30px; /* Add padding inside the form */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ccc; /* Optional: border for clarity */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.add-speaker-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-speaker-form-label {
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px;
+}
+
+.add-speaker-form-label-h4 {
+  margin-bottom: 2px; /* Space below the label */
+  font-weight: bold; /* Make label bold */
+  font-size: 1rem; /* Larger font size for the heading */
+  text-align: left; /* Align heading to the left */
+  padding: 1px;
+  display: block;
+}
+
+.add-speaker-form-input {
+  padding: 10px; /* Add padding inside the input fields */
+  margin-bottom: 5px; /* Space between input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  font-size: 1rem; /* Font size for input fields */
+  width: 100%; /* Full width for input fields */
+  box-sizing: border-box;
+  display: block;
+}
+
+.add-speaker-form-button {
+  padding: 10px; /* Add padding inside the button */
+  background-color: black; /* Button color */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for the button */
+  transition: background-color 0.3s;
+  margin-top: 15px; /* Smooth transition for hover effect */
+}
+
+.add-speaker-form button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+
+
+
